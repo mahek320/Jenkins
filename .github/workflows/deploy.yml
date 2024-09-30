@@ -63,5 +63,5 @@ jobs:
         IMAGE_TAG: ${{ steps.commit.outputs.short }}
       run: |
         kubectl rollout restart deployment/my-app1
-        kubectl apply -f  /my-app1-deployment.yml
-        kubectl apply -f /regapp-service1.yml
+        kubectl apply -f  deployment.yml
+        kubectl apply -f service1.yml
