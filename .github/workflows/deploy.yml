@@ -63,5 +63,5 @@ jobs:
         IMAGE_TAG: ${{ steps.commit.outputs.short }}
       run: |
         kubectl rollout restart deployment/regapp-deployment
-        kubectl apply -f manifests/hello-app-deployment.yaml
-        kubectl apply -f manifests/hello-app-service.yaml
+        kubectl apply -f /regapp-deployment.yaml
+        kubectl apply -f /regapp-service.yaml
