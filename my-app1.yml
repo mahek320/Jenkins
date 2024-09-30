@@ -1,23 +1,23 @@
 apiVersion: apps/v1 
 kind: Deployment
 metadata:
-  name: regapp-deployment
+  name: my-app1
   labels: 
-     app: regapp
+     app: my-app1
 
 spec:
   replicas: 2 
   selector:
     matchLabels:
-      app: regapp
+      app: my-app1
 
   template:
     metadata:
       labels:
-        app: regapp
+        app: my-app1
     spec:
       containers:
-      - name: regapp
+      - name: my-app1
         image: ashfaque9x/regapp
         imagePullPolicy: Always
         ports:
