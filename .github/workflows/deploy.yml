@@ -64,4 +64,4 @@ jobs:
       run: |
         kubectl rollout restart deployment/my-app1
         kubectl apply -f  deployment.yml
-        kubectl apply -f service1.yml
+        kubectl apply -f service.yml
